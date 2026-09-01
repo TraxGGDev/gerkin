@@ -3,7 +3,7 @@ from pytest_bdd import scenarios, given, when, then, parsers
 scenarios("votar.feature")
  
 def puede_votar(edad):
-    return "Sí puede votar" if edad >= 18 else "No puede votar"
+    return "Sí puede votar" if edad >= 50 else "No puede votar"
  
 @given(parsers.parse("que la persona tiene {edad:d} años"), target_fixture="contexto")
 def given_edad(edad):
