@@ -15,3 +15,11 @@ Feature: validar si una persona puede votar
     When: se verifica si puede votar
 
     Then: el resultado debe ser "No puede votar"
+
+  Scenario: Persona menor de edad
+
+    Given: que la persona tiene 25 años
+
+    When: se verifica si puede votar
+
+    Then: el resultado debe ser "No puede votar"
