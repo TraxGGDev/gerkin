@@ -3,23 +3,17 @@ Feature: validar si una persona puede votar
   Scenario: persona con edad suficiente
 
     Given: que la persona tiene 20 años
-
     When: se verifica si puede votar
-
     Then: el resultado debe ser "Sí puede votar"
 
   Scenario: Persona menor de edad
 
     Given: que la persona tiene 15 años
-
     When: se verifica si puede votar
-
     Then: el resultado debe ser "No puede votar"
 
   Scenario: Persona menor de edad v2
 
     Given: que la persona tiene 25 años
-
     When: se verifica si puede votar
-
     Then: el resultado debe ser "No puede votar"
